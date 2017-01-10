@@ -1,15 +1,7 @@
-* {
-	//Instead of the line below you could use @include box-sizing($bs)
-	box-sizing: border-box;
-}
-*::before {
-	//Instead of the line below you could use @include box-sizing($bs)
-	box-sizing: border-box;
-}
+*,
+*::before,
 *::after {
-	//Instead of the line below you could use @include box-sizing($bs)
 	box-sizing: border-box;
-}
 html {
 	color: #222;
 	font-size: 1em;
@@ -17,12 +9,10 @@ html {
 }
 ::-moz-selection {
 	background: #b3d4fc;
-	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	text-shadow: none;
 }
 ::selection {
 	background: #b3d4fc;
-	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	text-shadow: none;
 }
 hr {
@@ -88,7 +78,6 @@ body {
 		padding: 15px;
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.4);
-			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 			transition: all 0.5s ease;
 		}
 	}
@@ -108,10 +97,9 @@ nav {
 }
 a[role="button"] {
 	&:hover {
-		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 		transform: scale(1.03);
 	}
-	&:nth-of-type(7n 
+	&:nth-of-type(7n
 		+ 1) {
 			background-color: $pannel-color-1;
 		}
@@ -149,13 +137,11 @@ a[role="button"] {
 	&:target {
 		opacity: 1;
 		visibility: visible;
-		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 		transition: opacity 1s, visibility 1s;
 	}
 	&:not(:target) {
 		opacity: 0;
 		visibility: hidden;
-		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 		transition: opacity 1s, visibility 1s;
 	}
 }
@@ -340,7 +326,6 @@ article[id*="modal-container-"] > section {
 	height: 95vh;
 	width: 85vh;
 	padding: 1vh 5vh 8vh;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 8px;
 	overflow-y: scroll;
 	article {
@@ -353,7 +338,6 @@ article[id*="modal-container-"] > section {
 	padding-top: 0;
 	margin-top: 5px;
 	&:hover {
-		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 		transform: scale(1.09);
 	}
 }
