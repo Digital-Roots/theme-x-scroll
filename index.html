@@ -9,7 +9,7 @@ layout: default
       <span>{{ post.date | date: "%b %-d, %Y" }}</span>
       <h1>{{ post.title }}</h1>
       <p>
-        {{ post.excerpt | truncatewords: 250 | strip_html }}
+        {{ post.excerpt | truncateword: 150 | strip_html }}
       </p>
     </span>
       <span>
@@ -22,7 +22,7 @@ layout: default
       <a href="#0">Close</a>
       <article>
         <h1>{{ post.title }}</h1>
-        
+
           {{ post.content }}
 
       </article>

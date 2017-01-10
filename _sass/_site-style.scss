@@ -111,7 +111,7 @@ a[role="button"] {
 		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 		transform: scale(1.03);
 	}
-	&:nth-of-type(7n {
+	&:nth-of-type(7n 
 		+ 1) {
 			background-color: $pannel-color-1;
 		}
