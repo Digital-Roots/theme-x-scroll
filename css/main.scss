@@ -23,6 +23,9 @@ $pannel-color-5: #81cfe0;
 $pannel-color-6: #aea8d3;
 $pannel-color-7: #6c7a89;
 
+$background-color: white;
+$brand-color: white;
+
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -52,5 +55,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "base",
+        "layout",
+        "syntax-highlighting",
         "site-style"
 ;
