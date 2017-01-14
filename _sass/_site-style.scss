@@ -2,6 +2,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+}
 html {
 	color: #222;
 	font-size: 1em;
@@ -95,34 +96,34 @@ nav {
 		}
 	}
 }
+
 a[role="button"] {
 	&:hover {
 		transform: scale(1.03);
 	}
-	&:nth-of-type(7n
-		+ 1) {
+	&:nth-of-type(7n + 1) {
 			background-color: $pannel-color-1;
 		}
-		+ 2) {
+	&:nth-of-type(7n + 2) {
 			background-color: $pannel-color-2;
 		}
-		+ 3) {
+	&:nth-of-type(7n + 3) {
 			background-color: $pannel-color-3;
 		}
-		+ 4) {
+	&:nth-of-type(7n + 4) {
 			background-color: $pannel-color-4;
 		}
-		+ 5) {
+	&:nth-of-type(7n + 5) {
 			background-color: $pannel-color-5;
 		}
-		+ 6) {
+	&:nth-of-type(7n + 6) {
 			background-color: $pannel-color-6;
 		}
-		+ 7) {
+	&:nth-of-type(7n + 7) {
 			background-color: $pannel-color-7;
 		}
 	}
-}
+
 [id*="modal-container-"] {
 	position: fixed;
 	top: 0;
